@@ -5,7 +5,7 @@ class Artist
   def initialize(name)
     @name = name
     @@all << self
-    @songinstance = []
+    @songs = []
 
   end
   
@@ -14,7 +14,6 @@ class Artist
                           #stored in @songs
   end
   
-
   
   def self.all
     @@all
@@ -42,7 +41,7 @@ class Artist
   end
   
   def print_songs
-     puts @songinstance.collect {|song| song.name}
+     puts @songs.collect {|song| song.name}
   end
 
 
