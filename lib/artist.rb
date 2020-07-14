@@ -44,7 +44,7 @@ class Artist
   
   def print_songs
     songs.collect|songs| puts songs.name
-  end
+  
   end
 
   
