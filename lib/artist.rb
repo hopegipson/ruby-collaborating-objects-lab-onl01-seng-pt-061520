@@ -9,6 +9,11 @@ class Artist
 
   end
   
+   def add_song(song)
+    self.songs << song    #Artist.songs reader returns all songs 
+                          #stored in @songs
+  end
+  
   def songs
        Song.all.select do |song|
       song.artist == self
