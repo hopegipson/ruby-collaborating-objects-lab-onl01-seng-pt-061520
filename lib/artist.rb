@@ -18,16 +18,14 @@ class Artist
     @@all
   end
   
-  def self.find(name)
-    @@all.find do |artist1|
-      artist1.name == name
-    end
+  def self.find(name)    
+    self.all.detect { |artist| artist.name == name }
   end
 
-  def self.create(name)
-    artist1 = self.new(name)
-    @@all << self
-    artist1
+  def self.create(name)  
+    artist = Artist.new(name)
+    artist.save
+    artist
   end
   
   def self.find_or_create_by_name(name)
