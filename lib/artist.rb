@@ -46,7 +46,7 @@ class Artist
     songs.collect|songs| puts songs.name
    end
   end
-end
+
 
   
 
