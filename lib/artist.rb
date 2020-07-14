@@ -43,7 +43,8 @@ class Artist
   end
   
   def print_songs
-   puts Song.all.collect |songs| songs.name
+    arraysong = Song.all
+   puts arraysong.collect |songs| songs.name
    end
   end
 
