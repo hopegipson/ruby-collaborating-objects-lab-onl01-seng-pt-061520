@@ -17,6 +17,7 @@ class Artist
   
   def add_song(song)
     @songinstance << song
+    song.artist = self
   end
   
   def self.all
