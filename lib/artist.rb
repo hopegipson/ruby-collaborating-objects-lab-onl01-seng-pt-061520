@@ -21,6 +21,18 @@ class Artist
     @@all
   end
   
+  def self.find(name)
+    @@all.find do |artist1|
+      artist1.name == name
+    end
+  end
+
+  def self.create(name)
+    artist = self.new(name)
+    @@all << artist
+    artist
+  end
+  
   def self.find_or_create_by_name(name)
     if @@all.include?(name)
       
