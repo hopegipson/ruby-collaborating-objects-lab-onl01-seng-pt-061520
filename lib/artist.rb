@@ -28,14 +28,13 @@ class Artist
   end
 
   def self.create(name)
-    artist = self.new(name)
-    @@all << artist
-    artist
+    artist1 = self.new(name)
+    @@all << artist1
+    artist1
   end
   
   def self.find_or_create_by_name(name)
-    if @@all.include?(name)
-      
+
   end
   
   def print_songs
