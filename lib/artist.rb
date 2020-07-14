@@ -9,7 +9,6 @@ class Artist
   end
   
   def add_song(stitle)
-    songinstance = Song.new(stitle)
     songinstance.artist = self
   end
   
