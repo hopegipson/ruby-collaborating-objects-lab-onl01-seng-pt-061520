@@ -9,7 +9,8 @@ class Artist
   end
   
   def add_song(stitle)
-    stitle.artist = self
+    songinstance = Song.new(stitle)
+    songinstance.artist = self
   end
   
   def self.all
