@@ -13,7 +13,10 @@ class Artist
     self.songs << song
   end
   
-
+  
+  def self.all
+    @@all
+  end
   
   def self.find(name)    
     self.all.detect { |artist| artist.name == name }
