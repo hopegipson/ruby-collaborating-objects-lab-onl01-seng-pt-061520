@@ -28,6 +28,7 @@ class Artist
     @@all.find do |artist1|
       artist1.name == name
     end
+    artist1
   end
 
   def self.create(name)
